@@ -1,0 +1,125 @@
+@media only screen and (max-width: 450px) {
+  .welcomeTxt,.chooseTxt,.hsePic,.rjhPic,.rjhPic:hover,.hsePic:hover,.carmelPic,.fallcreekPic,.carmelPic:hover,.fallcreekPic:hover{position: absolute;}
+  .welcomeTxt,.chooseTxt{font-family: Ubuntu; font-style: normal; color: #000000;}
+  .welcomeTxt{
+    /* Welcome! */
+    left: 17.39%;
+    right: 17.39%;
+    top: 4.13%;
+    bottom: 87.61%;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 57px;
+  }
+  .chooseTxt{
+    /* Please choose a school */
+    left: 18.36%;
+    right: 18.36%;
+    top: 24.44%;
+    bottom: 70.98%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+  }
+  .hsePic,.rjhPic{
+    top: 220px;
+    width: 175px;
+    height: 175px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+    outline: 0;
+  }
+  .hsePic{left: 6.28%; right: 53.44%;}
+
+  .rjhPic{left: 52.66%; right: 8.45%;}
+
+  .rjhPic:hover,.hsePic:hover{
+    top: 220px;
+    width: 185px;
+    height: 185px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+  }
+  .rjhPic:hover{left: 52.66%; right: 8.45%;}
+
+  .hsePic:hover{left: 6.28%; right: 54.83%;}
+
+  .carmelPic,.fallcreekPic{
+    top: 430px;
+    width: 175px;
+    height: 175px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+    outline: 0;
+  }
+  .carmelPic{ left: 6.28%; right: 53.38%;}
+
+  .fallcreekPic{ left: 53.14%; right: 6.76%;}
+
+  .carmelPic:hover,.fallcreekPic:hover{
+    top: 430px;
+    width: 185px;
+    height: 185px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+  }
+  .carmelPic:hover{left: 6.28%; right: 53.38%;}
+
+  .fallcreekPic:hover{left: 53.14%; right: 6.76%;}
+}
+@media only screen and (max-width: 360px) {
+  .hsePic,.rjhPic,.rjhPic:hover,.hsePic:hover,.carmelPic,.fallcreekPic,.carmelPic:hover,.fallcreekPic:hover{position: absolute;}
+  .hsePic,.rjhPic{
+    top: 220px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+    outline: 0;
+  }
+  .hsePic{left: 6.28%; right: 53.44%;}
+
+  .rjhPic{left: 53.06%; right: 6.67%;}
+
+  .hsePic:hover,.rjhPic:hover{
+    top: 220px;
+    width: 155px;
+    height: 155px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+  }
+  .hsePic:hover{left: 6.28%; right: 53.44%;}
+
+  .rjhPic:hover{left: 53.06%; right: 6.67%;}
+
+  .carmelPic,.fallcreekPic{
+    top: 400px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+    outline: 0;
+  }
+  .carmelPic{left: 6.28%; right: 53.38%;}
+
+  .fallcreekPic{left: 53.14%; right: 6.76%;}
+
+  .carmelPic:hover,.fallcreekPic:hover{
+    top: 400px;
+    width: 155px;
+    height: 155px;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50px;
+  }
+  .carmelPic:hover{left: 6.28%; right: 53.38%;}
+
+  .fallcreekPic:hover{left: 53.14%; right: 6.76%;}
+}

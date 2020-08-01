@@ -1,0 +1,101 @@
+<html>
+  <head>
+    <style>
+    @media only screen and (max-width: 450px) {
+      .rjhPic1,.rectangle,.circle,.previousBtn,.nextBtn,.currentBtn,.dot1,.dot2,.dot3,.dot4,.dot5,.dot6,.dot7,.Alunch,.Blunch,.Clunch{position: absolute;}
+      .rjhPic1{
+        width: 198px;
+        height: 169px;
+        left: calc(50% - 198px/2);
+        top: 0px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      }
+      .rectangle{
+        left: 0px;
+        right: 0px;
+        top: 53.68%;
+        bottom: 0%;
+        background: #C4C4C4;
+        border-radius: 70px 70px 0px 0px;
+      }
+      .circle{
+        width: 250;
+        height: 250px;
+        left: calc(50% - 250px/2);
+        top: 200px;
+        border-radius: 50%;
+        background: #fbaa19;
+        box-shadow: 10px 10px 10px 2px rgba(0, 0, 0, 0.25), inset 10px 10px 10px 2px rgba(0, 0, 0, 0.25);
+      }
+      .previousBtn,.nextBtn,.currentBtn{
+        left: 67px;
+        right: 67px;
+        background: #640e0e;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 70px;
+      }
+      .previousBtn{top: 76.9%; bottom: 18.64%;}
+
+      .nextBtn{top: 83.37%; bottom: 12.17%;}
+
+      .currentBtn{top: 89.84%; bottom: 5.69%;}
+
+      .dot1,.dot2,.dot3,.dot4,.dot5,.dot6,.dot7{
+        top: 69.75%;
+        bottom: 28.01%;
+        background: #FFFFFF;
+        border-radius: 50%;
+      }
+      .dot1{left: 17.87%; right: 77.29%;}
+
+      .dot2{left: 27.78%; right: 67.39%;}
+
+      .dot3{left: 37.68%; right: 57.49%;}
+
+      .dot4{left: 47.58%; right: 47.58%;}
+
+      .dot5{left: 57.49%; right: 37.68%;}
+
+      .dot6{left: 67.39%; right: 27.78%;}
+
+      .dot7{left: 77.29%; right: 17.87%;}
+
+      .Alunch,.Blunch,.Clunch{
+        width: 40px;
+        height: 40px;
+        top: 150px;
+        background: #640e0e;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 50%;
+      }
+      .Alunch{left: calc(50% - 40px/2 - 62px);}
+
+      .Blunch{left: calc(50% - 40px/2);}
+
+      .Clunch{left: calc(50% - 40px/2 + 62px);}
+    }
+    </style>
+  </head>
+  <body>
+    <img class="rjhPic1" type="image" src="rjhighPic.svg" />
+    <div class="rectangle"></div>
+    <div class="circle"></div>
+    <div class="previousBtn"></div>
+    <div class="nextBtn"></div>
+    <div class="currentBtn"></div>
+    <ul style="list-style: none;" class="dot">
+      <li class="dot1"></li>
+      <li class="dot2"></li>
+      <li class="dot3"></li>
+      <li class="dot4"></li>
+      <li class="dot5"></li>
+      <li class="dot6"></li>
+      <li class="dot7"></li>
+    </ul>
+    <ul style="list-style: none;" class="lunch">
+      <li class="Alunch"></li>
+      <li class="Blunch"></li>
+      <li class="Clunch"></li>
+    </ul>
+  </body>
+</html>
