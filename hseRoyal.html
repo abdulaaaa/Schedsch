@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <style>
     @media only screen and (max-width: 450px) {
-      .hsePic1,.rectangle,.circle,.previousBtn,.nextBtn,.currentBtn,.dot1,.dot2,.dot3,.dot4,.dot5,.dot6,.dot7,.Alunch,.Blunch,.Clunch{position: absolute;}
+      .hsePic1,.rectangle,.circle,.previousBtn,.nextBtn,.currentBtn,.dot1,.dot2,.dot3,.dot4,.dot5,.dot6,.dot7,.Alunch,.Blunch,.Clunch,.time,.endtext{position: absolute;}
       .hsePic1{
         width: 150px;
         height: 110px;
@@ -80,6 +80,34 @@
       .Blunch{left: calc(50% - 40px/2);}
 
       .Clunch{left: calc(50% - 40px/2 + 62px);}
+      .time{
+        /* 0:00:00 */
+        width: 130px;
+        height: 50px;
+        left: calc(50% - 130px/2);
+        top: 175px;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+      .endtext{
+        /* until period _ ends */
+        width: 160px;
+        height: 40px;
+        left: calc(50% - 159px/2 - 0.5px);
+        top: 225px;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+        color: #FFFFFF;
+      }
     }
     </style>
   </head>
@@ -87,6 +115,8 @@
     <img class="hsePic1" type="image" src="hseRoyalPic.svg" />
     <div class="rectangle"></div>
     <div class="circle"></div>
+    <div class="time">0:00:00</div>
+    <div class="endtext">Until period _ ends</div>
     <div class="previousBtn"></div>
     <div class="nextBtn"></div>
     <div class="currentBtn"></div>
