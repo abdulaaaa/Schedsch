@@ -6,8 +6,8 @@
     <title>HSE</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
     <style>
-    @media only screen and (max-width: 450px) {
-      .hsePic1,.rectangle,.circle,.previousBtn,.nextBtn,.currentBtn,.dot1,.dot2,.dot3,.dot4,.dot5,.dot6,.dot7,.Alunch,.Blunch,.Clunch,.time,.endtext{position: absolute;}
+    @media (min-width:320px) {
+      .hsePic1,.rectangle,.circle,.previousBtn,.nextBtn,.currentBtn,.period1Block,.period2Block,.period3Block,.period4Block,.period1,.period2,.period3,.period4,.period5,.period6,.period7,.Alunch,.Blunch,.Clunch,.time,.endtext,.Alunchtxt,.Blunchtxt,.Clunchtxt{position: absolute;}
       .hsePic1{
         width: 150px;
         height: 110px;
@@ -34,7 +34,7 @@
       }
       .previousBtn,.nextBtn,.currentBtn{
         width: 280px;
-        height: 39.11px;
+        height: 40px;
         left: calc(50% - 280px/2);
         background: #02458c;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -46,26 +46,62 @@
 
       .currentBtn{top: 550px;}
 
-      .dot1,.dot2,.dot3,.dot4,.dot5,.dot6,.dot7{
+      .previousBtn:hover,.nextBtn:hover,.currentBtn:hover{
+        width: 285px;
+        height: 45px;
+        left: calc(50% - 285px/2);
+      }
+      .nextBtnTxt,.previousBtnTxt,.currentBtnTxt{
+        position: absolute;
+        width: 70px;
+        height: 20px;
+        left: calc(50% - 70px/2 + 3px);
+        top: 614px;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+
+      }
+      .nextBtnTxt{
+        top: 435px;
+      }
+      .previousBtnTxt{
+        top: 485px;
+      }
+      .currentBtnTxt{
+        top: 535px;
+      }
+
+      .period1Block,.period2Block,.period3Block,.period4Block,.period1,.period2,.period3,.period4,.period5,.period6,.period7{
         width: 20px;
         height: 20px;
         top: 410px;
         background: #FFFFFF;
         border-radius: 50%;
       }
-      .dot1{left: calc(50% - 20px/2 - 105px);}
+      .period1Block,.period2{left: calc(50% - 20px/2 - 70px);}
 
-      .dot2{left: calc(50% - 20px/2 - 70px);}
+      .period2Block{left: calc(50% - 20px/2 - 25px);}
 
-      .dot3{left: calc(50% - 20px/2 - 35px);}
+      .period3Block{left: calc(50% - 20px/2 + 25px);}
 
-      .dot4{left: calc(50% - 20px/2);}
+      .period4Block,.period6{left: calc(50% - 20px/2 + 70px);}
 
-      .dot5{left: calc(50% - 20px/2 + 35px);}
+      .period1{left: calc(50% - 20px/2 - 105px);}
 
-      .dot6{left: calc(50% - 20px/2 + 70px);}
+      .period3{left: calc(50% - 20px/2 - 35px);}
 
-      .dot7{left: calc(50% - 20px/2 + 105px);}
+      .period4{left: calc(50% - 20px/2);}
+
+      .period5{left: calc(50% - 20px/2 + 35px);}
+
+      .period7{left: calc(50% - 20px/2 + 105px);}
+
+
 
       .Alunch,.Blunch,.Clunch{
         width: 40px;
@@ -80,6 +116,24 @@
       .Blunch{left: calc(50% - 40px/2);}
 
       .Clunch{left: calc(50% - 40px/2 + 62px);}
+      .Alunchtxt,.Blunchtxt,.Clunchtxt{
+        width: 30px;
+        height: 30px;
+        top: 85px;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+      }
+      .Alunchtxt{left: calc(50% - 30px/2 - 62px);}
+
+      .Blunchtxt{left: calc(50% - 30px/2);}
+
+      .Clunchtxt{left: calc(50% - 30px/2 + 62px);}
+
       .time{
         /* 0:00:00 */
         width: 130px;
@@ -108,6 +162,21 @@
         text-align: center;
         color: #FFFFFF;
       }
+      .schooltime{
+        /* 00:00-00:00 */
+        position: absolute;
+        width: 138px;
+        height: 40px;
+        left: calc(50% - 138px/2 + 3px);
+        top: 300px;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #FFFFFF;
+      }
     }
     </style>
   </head>
@@ -115,24 +184,37 @@
     <img class="hsePic1" type="image" src="hseRoyalPic.svg" />
     <div class="rectangle"></div>
     <div class="circle"></div>
-    <div class="time">0:00:00</div>
-    <div class="endtext">Until period _ ends</div>
+    <div id="timer" class="time">0:00:00</div>
+    <div id="descriptionId" class="endtext">Until period 3 ends</div>
+    <div id="schedtimeId"class="schooltime">00:00-00:00</div>
     <div class="previousBtn"></div>
     <div class="nextBtn"></div>
     <div class="currentBtn"></div>
-    <ul style="list-style: none;" class="dot">
-      <li class="dot1"></li>
-      <li class="dot2"></li>
-      <li class="dot3"></li>
-      <li class="dot4"></li>
-      <li class="dot5"></li>
-      <li class="dot6"></li>
-      <li class="dot7"></li>
+    <p class="nextBtnTxt">next</p>
+    <p class="previousBtnTxt">previous</p>
+    <p class="currentBtnTxt">current</p>
+
+    <ul style="list-style: none;" class="Blockdot">
+      <li id="PB1"class="period1Block"></li>
+      <li id="PB2"class="period2Block"></li>
+      <li id="PB3"class="period3Block"></li>
+      <li id="PB4"class="period4Block"></li>
+      <li id="P1"hidden class="period1"></li>
+      <li id="P2"hidden class="period2"></li>
+      <li id="P3"hidden class="period3"></li>
+      <li id="P4"hidden class="period4"></li>
+      <li id="P5"hidden class="period5"></li>
+      <li id="P6"hidden class="period6"></li>
+      <li id="P7"hidden class="period7"></li>
     </ul>
+
     <ul style="list-style: none;" class="lunch">
       <li class="Alunch"></li>
       <li class="Blunch"></li>
       <li class="Clunch"></li>
     </ul>
+    <p class="Alunchtxt">A</p>
+    <p class="Blunchtxt">B</p>
+    <p class="Clunchtxt">C</p>
   </body>
 </html>
